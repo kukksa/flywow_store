@@ -14,7 +14,7 @@ const Classes = () => {
                 if (selectedCategory === 'ПОКАЗАТЬ ВСЁ') return true;
                 return selectedCategory === type.category;
             })
-            .map((type, id) => <Class type={type} key={id}/>)}
+            .map((type) => <Class type={type} key={type.id}/>)}
         </div>
     )
 }

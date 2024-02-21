@@ -4,7 +4,7 @@ const AllCategories = () => {
     return (
             <div className="container_allCategories">
             {['РАЗОВЫЕ ЗАНЯТИЯ', 'АБОНЕМЕНТЫ', 'АРЕНДА', 'СЕРТИФИКАТЫ', 'ПРОЧЕЕ', 'ПОКАЗАТЬ ВСЁ', ]
-            .map((category, id) => <Filter category = {category} key = {id}/>)}
+            .map((category) => <Filter category = {category} key = {category.id}/>)}
             </div>    
         
     )
